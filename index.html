@@ -22,6 +22,7 @@
                       <li><a href="#">About Us</a></li>
                       <li><a href="#">Promotions</a></li>
                       <li><a href="#">Newsletter</a></li>
+                      <li class="menu-icon" ><img src="images/menu-icon.png" alt="menu icon"> </li>
                   </ul>
               </nav>
           </div>
@@ -30,7 +31,15 @@
       </header>
 
       <section class ="hero" >
-          <img src = "images/Hero_image.jpg" alt="hero image - smart watch">
+          <picture>  <!--In picture element we have to go from minimum size to maximum as in this element the value once chosen as per the criterion is not updated in next line -->
+              <source media="(max-width:576px)" srcset="images/Hero_Mobile.jpg">  <!--this is for Mobile screen size image-->
+              <source media="(max-width:960px)" srcset="images/Hero_Tablet.jpg">  <!--this is for tablet size image-->
+              <source media="(max-width:1440px)" srcset="images/Hero_Desktop.jpg"> <!--this is for small size desktop image-->
+
+              <img src = "images/Hero_Large_Desktop.jpg" alt="hero image - smart watch">  <!-- this is the fallback image or large desktop size image which will load if nothing above loads or used-->
+          </picture>
+
+
           <div class= "hero-content">
               <div class="container">
                   <h1>Explore our new smart watch series</h1>
