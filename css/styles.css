@@ -81,6 +81,7 @@ header nav ul li a {
 header nav ul li a:hover{ /*added hover blue to it */
     color: #3E50E5;
     cursor: pointer; /*added THUMB pointer while hovering */
+    
 }
 
 header nav ul li:last-of-type a {
@@ -163,6 +164,7 @@ section.hero {
     background-color: #fff;
     color: #3E50E5;
     border: 1px solid #3E50E5;
+    font-size: 700;
     cursor: pointer; /*added THUMB pointer while hovering */
 }
 
